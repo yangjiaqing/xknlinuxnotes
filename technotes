@@ -9,6 +9,16 @@ git config --global user.email 1553730177@qq.com
 git config --global credential.helper 'cache --timeout 3600'
 git config --list
 
+DAY ONE 
+1.安装虚拟机VMware Workstation（基本不会出错）
+2.拷贝python源码进入虚拟机测试
+                  python ./***.py
+                 提示错误：not  python-tk 库
+                  解决办法：我们需要安装库：执行命令：sudo  apt-get install python-tk（apt-get install python-tk）
+3查看端口命令：ls -l /dev/ttyUSB0
+4运行python提示错误serial.serialutil.SerialException: could not open port /dev/ttyUSB0: [Errno 13] Permission denied: '/dev/ttyUSB0'
+解决办法：是串口没有权限，使用sudo 运行就可以了
+
 
 
 
