@@ -13,7 +13,7 @@ git config --list
 
 
 
-day 1
+                                              day 1
 1.安装虚拟机VMware Workstation（基本不会出错）
 2.拷贝python源码进入虚拟机测试
 python ./***.py
@@ -22,17 +22,21 @@ python ./***.py
 3查看端口命令：ls -l /dev/ttyUSB0
 4运行python提示错误serial.serialutil.SerialException: could not open port /dev/ttyUSB0: [Errno 13] Permission denied: '/dev/ttyUSB0'
 解决办法：是串口没有权限，使用sudo 运行就可以了
- day 2 
+
+                                              day 2 
 1.制作烧录sd错误，（）usb2.0的读卡器，插入3 .0端口 ，怎么都不成功，后来换成插入电脑前面非快速usb ,既可成功。
 2.板子烧录失败，现象： tx灯开始闪烁，一会后快速闪烁，
 解决办法： 我的img，镜像不是最新的，导致错误，最后去官网上下载最新的a20XXX.img.成功。
-  day 3
+
+                                              day 3
   1.   出现错误进入系统 只能进入命令行.使用ctrl+alt+f1和ctrl+alt+f7
 桌面只有一个斜杠， 重新刷机，问题依然存在，最后认识到，需要下载与img相对应的系统才行。
 2. # sudo board-config.sh进入设置界面
-day 4 
+
+                                              day 4 
  写敬业校本课程，耽误一天时间。
- day 5
+ 
+                                              day 5
  移植到pcduino，出现各种问题，首先是库，安装之后还有端口问题，  最后各种升级，安装库，查找资料，安装官网最新系统，最后成功。
 安装库：
     sudo apt-get install python-tk
